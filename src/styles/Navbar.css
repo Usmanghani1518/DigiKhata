@@ -1,0 +1,76 @@
+.background-digi{
+    background-image: url("../imagies/home-header.jpg");
+}
+.background-about{
+  background-image: url("../imagies/about/about-header.png");
+}
+.background-feature{
+  background-image: url("../imagies/features/feature-head.jpg");
+}
+.background-blog{
+  background-image: url("../imagies/blogs/blog-header.png");
+}
+.background-contact{
+  background-image: url("../imagies/contact/contactus-head.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-career{
+  background-image: url("../imagies/career/career-head.png");
+}
+
+.navbar-brand:hover{
+  cursor: pointer;
+}
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    bottom: 8px;
+    left: 10%;
+   
+  }
+  /* .header-position-fixed{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    background-color: green;
+  } */
+.google:hover{
+  cursor: pointer;
+}
+.appstore:hover{
+  cursor: pointer;
+}.microsoft:hover{
+  cursor: pointer;
+}
+.navbar{
+  padding: 0 !important;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
