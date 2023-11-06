@@ -27,7 +27,7 @@ function Navbars() {
       >
         <Container>
           <Navbar.Brand
-            onClick={() => ChangeBg("home")}
+            
             style={{ fontWeight: "500", color: "white", fontSize: "32px" }}
             to="#"
           >

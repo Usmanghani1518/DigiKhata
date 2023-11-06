@@ -1,0 +1,8 @@
+@media (min-width:992px) {
+    .max-width{
+max-width: 50%;
+/* flex: 0 0 50%; */
+text-align: center;
+margin: auto;
+    }
+}

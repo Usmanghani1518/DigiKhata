@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../imagies/khata.png";
 import twitter from "../imagies/twitter.png";
 import facebook from "../imagies/facebook.png";
 import linkdin from "../imagies/linkdin.png";
@@ -7,8 +6,9 @@ import youtube from "../imagies/youtube.png";
 import gPlay from "../imagies/google-play-head.png";
 import appStore from "../imagies/app-store-head.png";
 import MSoft from "../imagies/microsoft.png";
-// import whattsapp from "../imagies/blogs/blog-head-img.png";
 import insta from "../imagies/insta.png";
+import FooterLogo from "../imagies/footer-logo.png"
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
@@ -16,8 +16,7 @@ const Footer = () => {
         <div className="container text-white">
           <div className="row container pt-5">
             <div className="col-3" style={{ fontSize: "32px" }}>
-              <img style={{ width: "30px" }} src={logo} alt="" />{" "}
-              <span style={{ fontWeight: "700" }}>Digi</span>Khata
+            <Link to="/"> <img style={{ width: "170px", height: "48px"}} src={FooterLogo} alt="" /></Link> 
             </div>
             <div className="col-9">
               DigiKhata is Pakistan’s # 1 Digital Khata. This all in one
@@ -28,8 +27,8 @@ const Footer = () => {
 
           <div className="row mt-5">
             <div className="col-6">
-              <p>contact@digikhata.pk</p>
-              <p>+92 3099656639</p>
+              <p className="pointer">contact@digikhata.pk</p>
+              <p className="pointer">+92 3099656639</p>
               <p>
                 Digi Technologies PTE LTD. <br /> 160 Robinson Road #14-04,
                 Singapore
@@ -38,7 +37,7 @@ const Footer = () => {
                 Digi Khata SMC PVT LTD. <br />
                 10th Floor, State Life building, Blue Area, Islamabad, Pakistan
               </p>
-              <p>contact@digikhata.pk</p>
+              {/* <p>contact@digikhata.pk</p>s */}
               <p>
                 Digi Khata SMC PVT LTD. <br />
                 535 B Peoples Colony Faisalabad, Pakistan
