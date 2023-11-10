@@ -5,9 +5,13 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import HeadLogo from "../imagies/head-logo.png";
 import { Link } from "react-router-dom";
+import ScrollUpButton from 'react-scroll-to-top';
+// import {GoMoveToTop} from 'react-icons/go'
 import "../styles/Navbar.css";
 function Navbars() {
   const [bgColor, setbgColor] = useState("transparent");
+
+
   const Change = () => {
     if (window.scrollY >= 40) {
       setbgColor("black");
@@ -18,6 +22,16 @@ function Navbars() {
   };
   window.addEventListener("scroll", Change);
 
+  const Top =()=>{
+    window.scroll({
+      top:'0',
+      left:'0',
+      behavior:'smooth',
+      duration:'20'
+      
+
+    })
+  }
   return (
     <>
       <Navbar
@@ -31,7 +45,7 @@ function Navbars() {
             style={{ fontWeight: "500", color: "white", fontSize: "32px" }}
             to="#"
           >
-            <Link to='/'>
+            <Link to='/' onClick={Top}>
             <img
               style={{ width: "130px", height: "70px" }}
               src={HeadLogo}
@@ -42,7 +56,7 @@ function Navbars() {
             style={{ backgroundColor: "white" }}
             aria-controls="navbarScroll"
           />
-          <Navbar.Collapse id="navbarScroll">
+          <Navbar.Collapse id="navbarScroll"  >
             <Nav
               className="ms-auto  py-0   my-0"
               style={{
@@ -56,6 +70,7 @@ function Navbars() {
                 <Link
                   to="/about"
                   style={{ textDecoration: "none", color: "white" }}
+                  onClick={Top}
                 >
                   {" "}
                   About Us{" "}
@@ -65,6 +80,7 @@ function Navbars() {
                 <Link
                   to="/feature"
                   style={{ textDecoration: "none", color: "white" }}
+                  onClick={Top}
                 >
                   {" "}
                   Features{" "}
@@ -74,6 +90,7 @@ function Navbars() {
                 <Link
                   to="/blog"
                   style={{ textDecoration: "none", color: "white" }}
+                  onClick={Top}
                 >
                   {" "}
                   Blogs{" "}
@@ -84,6 +101,7 @@ function Navbars() {
                 <Link
                   to="/career"
                   style={{ textDecoration: "none", color: "white" }}
+                  onClick={Top}
                 >
                   Career
                 </Link>
@@ -92,6 +110,7 @@ function Navbars() {
                 <Link
                   to="/contact"
                   style={{ textDecoration: "none", color: "white" }}
+                  onClick={Top}
                 >
                   Contact Us
                 </Link>
@@ -110,8 +129,18 @@ function Navbars() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <ScrollUpButton smooth  top={500} WrapperComponent={ScrollTop}    />
     </>
   );
 }
+
+
+
+export const ScrollTop = () => {
+  return (
+    <div style={{color:'white'}}>Top</div>
+  )
+}
+
 
 export default Navbars;

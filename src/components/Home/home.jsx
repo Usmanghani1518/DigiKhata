@@ -16,6 +16,8 @@ import multiDevices from "../../imagies/multi-devices.png";
 import ShoaibJameel from "../../imagies/Shoaib-Jameel.png";
 import DrKinza from "../../imagies/Dr-Kinza.png";
 import SheikNouman from "../../imagies/Sheik-Nouman.png";
+import invertedUp from "../../imagies/inverted-comma-up.png";
+import invertedDn from "../../imagies/inverted-comma-down.png";
 
 import { PiWhatsappLogo } from "react-icons/pi";
 import { FiPhone } from "react-icons/fi";
@@ -25,12 +27,11 @@ import Modal from "react-bootstrap/Modal";
 import Accordion from "react-bootstrap/Accordion";
 import Carousel from "react-bootstrap/Carousel";
 
-
 import gPlay from "../../imagies/google-play-head.png";
 import appStore from "../../imagies/app-store-head.png";
 import microsoft from "../../imagies/microsoft.png";
-import HomeheadImg from '../../imagies/home-head-img.png'
-import Navbars from '../navbar';
+import HomeheadImg from "../../imagies/home-head-img.png";
+import Navbars from "../navbar";
 const Home = () => {
   const [show, setShow] = useState(false);
 
@@ -38,59 +39,66 @@ const Home = () => {
   const handleShow = () => setShow(true);
   return (
     <>
-     <div
-    className={`background-blog img-fluid`}
-    style={{ width: "100%", height: "100%", marginTop: "-60px" }}
-  >
-    <Navbars />
+      <div
+        className={`background-blog img-fluid`}
+        style={{ width: "100%", height: "100%", marginTop: "-60px" }}
+      >
+        <Navbars />
 
-    <section className="mt-5">
-      <div className="container">
-        <div className="row ">
-          <div className=" col-md-6 col-12 mt-md-5 pt-lg-5 pb-lg-5">
-          <h1 style={{fontWeight:'700'}} className="text-white pt-lg-5 mt-lg-5" >
-                    Barhao Karobaar Se Nata! Download Digi Khata
-                  </h1>
+        <section className="mt-5">
+          <div className="container">
+            <div className="row ">
+              <div className=" col-md-6 col-12  pt-5 karobar">
+                <h1
+                  style={{ fontWeight: "700" }}
+                  className="text-white pt-5 mt-md-5"
+                >
+                  Barhao Karobaar Se Nata! Download Digi Khata
+                </h1>
 
-                  <p className="text-white pt-3">
-                    DigiKhata is a 100% secure and simple bookkeeping app.
-                    Record and manage your business transactions easily with
-                    DigiKhata app & recover yours payments 3X faster.
-                  </p>
+                <p className="text-white pt-3">
+                  DigiKhata is a 100% secure and simple bookkeeping app. Record
+                  and manage your business transactions easily with DigiKhata
+                  app & recover yours payments 3X faster.
+                </p>
 
-            <div
-              className="pb-5 mb-5 flex-wrap flex-md-nowrap"
-              style={{
-                display: "flex",
-              }}
-            >
-              <div>
-                <img src={gPlay} className="img-fluid me-3 google" alt="" />
+                <div
+                  className="pb-5 mb-5 flex-wrap flex-md-nowrap"
+                  style={{
+                    display: "flex",
+                  }}
+                >
+                  <div>
+                    <img src={gPlay} className="img-fluid me-3 google" alt="" />
+                  </div>
+                  <div>
+                    <img
+                      src={appStore}
+                      className="img-fluid me-3 appstore"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src={microsoft}
+                      className="img-fluid me-3 microsoft"
+                      alt=""
+                    />
+                  </div>
+                  <div></div>
+                </div>
               </div>
-              <div>
+              <div className="col-md-6 col-12  mt-md-3 pt-3">
                 <img
-                  src={appStore}
-                  className="img-fluid me-3 appstore"
+                  className="img-fluid mt-md-3 pt-md-5"
+                  src={HomeheadImg}
                   alt=""
                 />
               </div>
-              <div>
-                <img
-                  src={microsoft}
-                  className="img-fluid me-3 microsoft"
-                  alt=""
-                />
-              </div>
-              <div></div>
             </div>
           </div>
-          <div className="col-md-6 col-12  mt-md-5 pt-md-5 pt-3">
-          <img className="img-fluid mt-md-3 pt-md-5" src={HomeheadImg} alt=""  />
-          </div>
-        </div>
+        </section>
       </div>
-    </section>
-  </div>
 
       <div className="font home">
         <section className="mt-5">
@@ -282,7 +290,10 @@ const Home = () => {
                 </ul>
               </div>
               <div className="col-12 col-lg-6 my-auto">
-                <div className="col-md-6 my-auto" style={{ backgroundSize: "cover" }}>
+                <div
+                  className="col-md-6 my-auto"
+                  style={{ backgroundSize: "cover" }}
+                >
                   <div
                     className="d-flex  bg-black my-auto"
                     style={{
@@ -307,7 +318,6 @@ const Home = () => {
                         height="315"
                         src="https://www.youtube.com/embed/Y-0I4PKNH9E"
                         title="YouTube video player"
-                        frameBorder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                       ></iframe>
@@ -330,15 +340,22 @@ const Home = () => {
                       <p className="text-center">Healthcare Specialist</p>
                     </div>
                     <div className="col-lg-8 col-12 my-auto">
-                    <div className="row">
-                        <div className="col-md-2 col-12"></div>
-                        <div className="col-md-8 col-12">
-                          <p> Digi Khata is equally useful for every work and business.
-                      It is easily flexible to handle your ledger accounts.</p>
+                      <div className="row">
+                        <div className="col-md-2 col-12">
+                          <img src={invertedUp} className="img-fluid" alt="" />
                         </div>
-                        <div className="col-md-2 col-12"></div>
+                        <div className="col-md-8 col-12">
+                          <p className="mt-70">
+                            {" "}
+                            Digi Khata is equally useful for every work and
+                            business. It is easily flexible to handle your
+                            ledger accounts.
+                          </p>
+                        </div>
+                        <div className="col-md-2 col-12">
+                          <img src={invertedDn} className="img-fluid mt-140" alt="" />
+                        </div>
                       </div>
-                      
                     </div>
                   </div>
                   <Carousel.Caption></Carousel.Caption>
@@ -350,18 +367,23 @@ const Home = () => {
                       <p className="text-center">Textile Business Owner</p>
                     </div>
                     <div className="col-lg-8 col-12 my-auto">
-                    <div className="row">
-                        <div className="col-md-2 col-12"></div>
-                        <div className="col-md-8 col-12">
-                          <p> Whenever I add transactions to Digi Khata, then it sends
-                      free Automatic SMS reminders to the customer along with
-                      the customer ledger. Maintain the accounts and leave no
-                      room for mistakes.</p>
+                      <div className="row">
+                        <div className="col-md-2 col-12">
+                          <img src={invertedUp} className="img-fluid" alt="" />
                         </div>
-                        <div className="col-md-2 col-12"></div>
+                        <div className="col-md-8 col-12">
+                          <p className="mt-70">
+                            {" "}
+                            Whenever I add transactions to Digi Khata, then it
+                            sends free Automatic SMS reminders to the customer
+                            along with the customer ledger. Maintain the
+                            accounts and leave no room for mistakes.
+                          </p>
+                        </div>
+                        <div className="col-md-2 col-12">
+                          <img src={invertedDn} className="img-fluid mt-140" alt="" />
+                        </div>
                       </div>
-
-                      
                     </div>
                   </div>
                   <Carousel.Caption></Carousel.Caption>
@@ -374,15 +396,22 @@ const Home = () => {
                     </div>
                     <div className="col-lg-8 col-12 my-auto">
                       <div className="row">
-                        <div className="col-md-2 col-12"></div>
-                        <div className="col-md-8 col-12">
-                          <p> Digi Khata has shrunk our hours-long work shift into
-                      minutes. It is very easy-to-use, record transactions in
-                      real-time and keep our record safe with data backup.</p>
+                        <div className="col-md-2 col-12">
+                          <img src={invertedUp} className="img-fluid" alt="" />
                         </div>
-                        <div className="col-md-2 col-12"></div>
+                        <div className="col-md-8 col-12">
+                          <p className="mt-70">
+                            {" "}
+                            Digi Khata has shrunk our hours-long work shift into
+                            minutes. It is very easy-to-use, record transactions
+                            in real-time and keep our record safe with data
+                            backup.
+                          </p>
+                        </div>
+                        <div className="col-md-2 col-12">
+                          <img src={invertedDn} className="img-fluid mt-140" alt="" />
+                        </div>
                       </div>
-                     
                     </div>
                   </div>
                   <Carousel.Caption></Carousel.Caption>
@@ -391,67 +420,76 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="py-5" style={{backgroundColor:'#f8f8f8'}} >
-          <div className="pt-5" >
-          <div className="container">
-            <div className="row">
-              <div className="col-md-4 col-12">
-                <h2>Frequently Asked Question</h2>
-                <p>
-                  Is this guide help for you? If you still have any queries
-                  about the DigiKhata app then contact us now!
-                </p>
-<div className="d-flex text-white">
-                <div className="bg-orange me-2 px-4 py-2 pointer" style={{borderRadius:'7px'}}>
-                  <PiWhatsappLogo style={{fontSize:'20px'}} /> WhatsApp
+        <section className="py-5" style={{ backgroundColor: "#f8f8f8" }}>
+          <div className="pt-5">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-4 col-12">
+                  <h2>Frequently Asked Question</h2>
+                  <p>
+                    Is this guide help for you? If you still have any queries
+                    about the DigiKhata app then contact us now!
+                  </p>
+                  <div className="d-flex text-white">
+                    <div
+                      className="bg-orange me-2 px-4 py-2 pointer"
+                      style={{ borderRadius: "7px" }}
+                    >
+                      <PiWhatsappLogo style={{ fontSize: "20px" }} /> WhatsApp
+                    </div>
+                    <div
+                      className="bg-orange px-4 py-2 pointer"
+                      style={{ borderRadius: "7px" }}
+                    >
+                      <FiPhone style={{ fontSize: "20px" }} />
+                      Call Us{" "}
+                    </div>
+                  </div>
                 </div>
-                <div className="bg-orange px-4 py-2 pointer" style={{borderRadius:'7px'}}><FiPhone style={{fontSize:'20px'}} />Call Us </div>
-                </div>
-              </div>
-              <div className="col-md-8 col-12">
-                <div className="">
-                  <Accordion defaultActiveKey="0">
-                    <Accordion.Item eventKey="0">
-                      <Accordion.Header>
-                        How To Add Your Business In DigiKhata?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        Install the DigiKhata app on your phone or open the
-                        online app on your browser. Log in to the DigiKhata app
-                        and add your number. When you’ll receive the OTP number
-                        then enter it into the app. Then add your business name
-                        and you’re ready to go.
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey="1">
-                      <Accordion.Header>
-                        How to add Customers/ Suppliers In DigiKhata?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        Click on Customers/ Suppliers on top of the Home Screen.
-                        Tap on Add CUSTOMER/SUPPLIER button. If the
-                        customer/supplier is already in your contacts then add
-                        from there. If it’s not in your contacts then add the
-                        customer/supplier name & their number and a new ledger
-                        account is created.
-                      </Accordion.Body>
-                    </Accordion.Item>
+                <div className="col-md-8 col-12">
+                  <div className="">
+                    <Accordion defaultActiveKey="0">
+                      <Accordion.Item eventKey="0">
+                        <Accordion.Header>
+                          How To Add Your Business In DigiKhata?
+                        </Accordion.Header>
+                        <Accordion.Body>
+                          Install the DigiKhata app on your phone or open the
+                          online app on your browser. Log in to the DigiKhata
+                          app and add your number. When you’ll receive the OTP
+                          number then enter it into the app. Then add your
+                          business name and you’re ready to go.
+                        </Accordion.Body>
+                      </Accordion.Item>
+                      <Accordion.Item eventKey="1">
+                        <Accordion.Header>
+                          How to add Customers/ Suppliers In DigiKhata?
+                        </Accordion.Header>
+                        <Accordion.Body>
+                          Click on Customers/ Suppliers on top of the Home
+                          Screen. Tap on Add CUSTOMER/SUPPLIER button. If the
+                          customer/supplier is already in your contacts then add
+                          from there. If it’s not in your contacts then add the
+                          customer/supplier name & their number and a new ledger
+                          account is created.
+                        </Accordion.Body>
+                      </Accordion.Item>
 
-                    <Accordion.Item eventKey="2">
-                      <Accordion.Header>
-                        Is DigiKhata Safe To Keep My Business Record?
-                      </Accordion.Header>
-                      <Accordion.Body>
-                        DigiKhata is a 100% secure cloud-based bookkeeping and
-                        accounting app. It also keeps your data safe for
-                        lifetime with free cloud backup.
-                      </Accordion.Body>
-                    </Accordion.Item>
-                  </Accordion>
+                      <Accordion.Item eventKey="2">
+                        <Accordion.Header>
+                          Is DigiKhata Safe To Keep My Business Record?
+                        </Accordion.Header>
+                        <Accordion.Body>
+                          DigiKhata is a 100% secure cloud-based bookkeeping and
+                          accounting app. It also keeps your data safe for
+                          lifetime with free cloud backup.
+                        </Accordion.Body>
+                      </Accordion.Item>
+                    </Accordion>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
           </div>
         </section>
       </div>

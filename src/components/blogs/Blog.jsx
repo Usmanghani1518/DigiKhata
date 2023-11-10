@@ -3,7 +3,7 @@ import gPlay from "../../imagies/google-play-head.png";
 import appStore from "../../imagies/app-store-head.png";
 import blogHead from "../../imagies/blogs/blog-head-img.png";
 import Navbars from '../navbar';
-
+import './Blog.css'
 const Blog = () => {
   return (
     <div
@@ -15,7 +15,7 @@ const Blog = () => {
         <section className="mt-5">
           <div className="container">
             <div className="row ">
-              <div className=" col-md-6 col-12 pt-lg-5 pb-lg-5">
+              <div className=" col-md-6 col-12 pt-blog pb-lg-5">
               <h1 className="text-white pt-lg-5 mt-lg-5">
                     DigiKhata Latest Blogs
                   </h1>

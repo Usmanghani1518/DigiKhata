@@ -3,6 +3,7 @@ import gPlay from "../../imagies/google-play-head.png";
 import appStore from "../../imagies/app-store-head.png";
 import featureHead from "../../imagies/features/features-head-boy.png";
 import Navbars from '../navbar';
+import "./Feature.css"
 const Feature = () => {
   return (
     <div
@@ -14,8 +15,8 @@ const Feature = () => {
     <section className="mt-5">
       <div className="container">
         <div className="row ">
-          <div className=" col-md-6 col-12 mt-md-5 pt-lg-5 pb-lg-5">
-          <h1 className="text-white pt-lg-5 mt-lg-5">
+          <div className=" col-md-6 col-12  pt-md-5 pb-lg-5 explore">
+          <h1 className="text-white pt-md-5 mt-md-5">
                     Let’s Explore The DigiKhata App
                   </h1>
 

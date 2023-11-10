@@ -17,10 +17,10 @@ const About = () => {
           <section className="mt-5">
             <div className="container">
               <div className="row ">
-                <div className=" col-md-6 col-12 pt-lg-5 pb-lg-5">
+                <div className=" col-md-6 col-12 pt-md-5 mt-md-5 mb-md-3 pb-md-5">
                   <h1
                     style={{ fontWeight: "700", fontSize: "2.25rem" }}
-                    className="text-white pt-lg-5 mt-lg-5 "
+                    className="text-white pt-md-5 mt-md-5 "
                   >
                     Transform Your Business Digitally With DigiKhata
                   </h1>
@@ -69,7 +69,7 @@ const About = () => {
           <div className="mt-5">
             <div className="container">
               <div className="row d-flex justify-content-center">
-                <div className="col-lg-6 col-md-8 col-12 text-center max-width ">
+                <div className="col-lg-6 col-md-8 col-12  text-center max-width ">
                   <h2 style={{ fontWeight: "700" }}>
                     Serving The Digital Needs Of{" "}
                     <span className="orange">Your Business</span>{" "}

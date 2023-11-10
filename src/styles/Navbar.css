@@ -14,7 +14,7 @@
   background-image: url("../imagies/contact/contactus-head.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 .background-career{
   background-image: url("../imagies/career/career-head.png");
@@ -56,7 +56,14 @@
 .navbar{
   padding: 0 !important;
 } 
-
+.top {
+  background-color: '#e74425'!important
+}
+.scroll-to-top {
+  background-color: #e74425 !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
 
 
 
