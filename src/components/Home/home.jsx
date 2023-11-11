@@ -281,8 +281,8 @@ const Home = () => {
                   <li className="user">Real Estate Office</li>
                 </ul>
               </div>
-              <div className="col-12 col-lg-6">
-                <div className="col-md-6" style={{ backgroundSize: "cover" }}>
+              <div className="col-12 col-lg-6 my-auto">
+                <div className="col-md-6 my-auto" style={{ backgroundSize: "cover" }}>
                   <div
                     className="d-flex  bg-black "
                     style={{
@@ -330,8 +330,15 @@ const Home = () => {
                       <p className="text-center">Healthcare Specialist</p>
                     </div>
                     <div className="col-lg-8 col-12 my-auto">
-                    <p className="" style={{display:'flex',justifyContent:'center',alignItems:'center',margin:'auto'}}>  Digi Khata is equally useful for every work and business.
+                    <div className="row">
+                        <div className="col-md-2 col-12"></div>
+                        <div className="col-md-8 col-12">
+                          <p> Digi Khata is equally useful for every work and business.
                       It is easily flexible to handle your ledger accounts.</p>
+                        </div>
+                        <div className="col-md-2 col-12"></div>
+                      </div>
+                      
                     </div>
                   </div>
                   <Carousel.Caption></Carousel.Caption>
@@ -343,10 +350,18 @@ const Home = () => {
                       <p className="text-center">Textile Business Owner</p>
                     </div>
                     <div className="col-lg-8 col-12 my-auto">
-                      Whenever I add transactions to Digi Khata, then it sends
+                    <div className="row">
+                        <div className="col-md-2 col-12"></div>
+                        <div className="col-md-8 col-12">
+                          <p> Whenever I add transactions to Digi Khata, then it sends
                       free Automatic SMS reminders to the customer along with
                       the customer ledger. Maintain the accounts and leave no
-                      room for mistakes.
+                      room for mistakes.</p>
+                        </div>
+                        <div className="col-md-2 col-12"></div>
+                      </div>
+
+                      
                     </div>
                   </div>
                   <Carousel.Caption></Carousel.Caption>
@@ -358,9 +373,16 @@ const Home = () => {
                       <p className="text-center">Restaurant Owner</p>
                     </div>
                     <div className="col-lg-8 col-12 my-auto">
-                      Digi Khata has shrunk our hours-long work shift into
+                      <div className="row">
+                        <div className="col-md-2 col-12"></div>
+                        <div className="col-md-8 col-12">
+                          <p> Digi Khata has shrunk our hours-long work shift into
                       minutes. It is very easy-to-use, record transactions in
-                      real-time and keep our record safe with data backup.
+                      real-time and keep our record safe with data backup.</p>
+                        </div>
+                        <div className="col-md-2 col-12"></div>
+                      </div>
+                     
                     </div>
                   </div>
                   <Carousel.Caption></Carousel.Caption>
@@ -380,10 +402,10 @@ const Home = () => {
                   about the DigiKhata app then contact us now!
                 </p>
 <div className="d-flex text-white">
-                <div className="bg-orange me-2 px-4 py-2" style={{borderRadius:'7px'}}>
+                <div className="bg-orange me-2 px-4 py-2 pointer" style={{borderRadius:'7px'}}>
                   <PiWhatsappLogo style={{fontSize:'20px'}} /> WhatsApp
                 </div>
-                <div className="bg-orange px-4 py-2" style={{borderRadius:'7px'}}><FiPhone style={{fontSize:'20px'}} />Call Us </div>
+                <div className="bg-orange px-4 py-2 pointer" style={{borderRadius:'7px'}}><FiPhone style={{fontSize:'20px'}} />Call Us </div>
                 </div>
               </div>
               <div className="col-md-8 col-12">

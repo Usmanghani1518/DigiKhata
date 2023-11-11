@@ -113,6 +113,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        you know me
       </section>
     </>
   );
