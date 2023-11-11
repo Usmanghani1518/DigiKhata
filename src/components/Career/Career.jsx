@@ -3,6 +3,7 @@ import gPlay from "../../imagies/google-play-head.png";
 import appStore from "../../imagies/app-store-head.png";
 // import featureHead from "../../imagies/features/features-head-boy.png";
 import Navbars from '../navbar';
+import './career.css'
 const Career = () => {
   return (
     <div
@@ -14,7 +15,7 @@ const Career = () => {
     <section className="mt-5">
       <div className="container">
         <div className="row ">
-          <div className=" col-md-6 col-12 pt-lg-5 pb-lg-5">
+          <div className=" col-md-6 col-12 py-career ">
           <h1 className="text-white pt-lg-5 mt-lg-5">
                     Find Your Dream Job In A Well-Reputed IT Company!
                   </h1>
