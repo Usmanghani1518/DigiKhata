@@ -1,0 +1,46 @@
+.Contactmethods{
+    background-image: linear-gradient(to left,#fe8c00,#f83600);
+    justify-content: space-around;
+ font-family: 'Montserrat', sans-serif;
+
+}
+.box{
+    background-color: aliceblue;
+    border-radius: 15px;
+transition: scale 0.2s ease-in-out;
+align-items: center;
+font-family: 'Montserrat', sans-serif;
+}
+.box:hover{
+    scale:calc(1.1)
+}
+.contactIcon {
+    font-size: 1.5rem; /* Adjusted for better visibility on different screen sizes */
+    color: #e74425;
+  }
+  
+  @media (max-width: 767px) {
+    .mainheading {
+      text-align: center;
+    }
+  
+    .heading {
+      font-size: 1.5rem; /* Adjusted heading size for smaller screens */
+    }
+  
+    .headingdes {
+      font-size: 0.8rem; /* Adjusted description size for smaller screens */
+    }
+  
+    .box {
+      width: 80%; /* Adjusted box width for better responsiveness */
+    }
+  }
+
+.box a{
+    text-decoration: none;
+    color:#e74425;
+}
+.box h4{
+    font-weight: 800;
+}

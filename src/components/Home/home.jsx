@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import "./Home.css";
+import { FaYoutube } from 'react-icons/fa';
 import Book from "../../imagies/khata.png";
 import dokaan from "../../imagies/dokaan.png";
 import Billbook from "../../imagies/billbook.png";
@@ -31,6 +32,9 @@ import gPlay from "../../imagies/google-play-head.png";
 import appStore from "../../imagies/app-store-head.png";
 import microsoft from "../../imagies/microsoft.png";
 import HomeheadImg from "../../imagies/home-head-img.png";
+import videoThum from "../../imagies/video-thum.png";
+
+
 import Navbars from "../navbar";
 const Home = () => {
   const [show, setShow] = useState(false);
@@ -100,10 +104,10 @@ const Home = () => {
         </section>
       </div>
 
-      <div className="font home">
+      <div className=" home">
         <section className="mt-5">
           <div className="container">
-            <h1
+            <h1 className="font"
               style={{
                 fontSize: "2.25rem",
                 fontWeight: "500",
@@ -132,7 +136,7 @@ const Home = () => {
                 style={{ textAlign: "justify" }}
                 className="col-12 col-lg-6 pt-lg-3"
               >
-                <h2 style={{ fontSize: "1.8rem" }} className="pe-5 me-lg-5">
+                <h2   className="fw-400 pe-5 me-lg-5 font ">
                   One-Stop Solution For Small Businesses
                 </h2>
                 <p className="pe-5 me-lg-5" style={{ textAlign: "justify" }}>
@@ -195,7 +199,7 @@ const Home = () => {
                   alt=""
                   className="pt-3 ps-3 pb-3"
                 />
-                <h3 className="pt-3 ps-3 pb-3">Unlimited Customers</h3>
+                <h3 className="fw-400 pt-3 ps-3 pb-3 font">Unlimited Customers</h3>
                 <p className="ps-3 pe-3" style={{ textAlign: "justify" }}>
                   Once you log in to the DigiKhata app. Then tap on the “ADD
                   CUSTOMER” button. Type your customer name and add their
@@ -206,7 +210,7 @@ const Home = () => {
               <div className="cards-child">
                 <img src={cashIn} alt="" className="pt-3 ps-3 pb-3" />
 
-                <h3 className="pt-3 ps-3 pb-3">Cash In / Cash Out</h3>
+                <h3 className=" fw-400 pt-3 ps-3 pb-3 font">Cash In / Cash Out</h3>
                 <p className="ps-3 pe-3" style={{ textAlign: "justify" }}>
                   Tap on “Cash Book” on the Home Screen. Add your Cash In & Cash
                   Out quickly. With the built-in calculator, you can easily
@@ -217,7 +221,7 @@ const Home = () => {
               <div className="cards-child">
                 <img src={businessCard} alt="" className="pt-3 ps-3 pb-3" />
 
-                <h3 className="pt-3 ps-3 pb-3">Free Business Cards</h3>
+                <h3 className=" fw-400 pt-3 ps-3 pb-3 font">Free Business Cards</h3>
                 <p className="ps-3 pe-3" style={{ textAlign: "justify" }}>
                   Represent your business the right way. Are you finding it
                   expensive to have a creative business card? With DigiKhata you
@@ -228,7 +232,7 @@ const Home = () => {
               <div className="cards-child">
                 <img src={multiLang} alt="" className="pt-3 ps-3 pb-3" />
 
-                <h3 className="pt-3 ps-3 pb-3">
+                <h3 className=" fw-400 pt-3 ps-3 pb-3 font">
                   Available In Multiple Languages
                 </h3>
                 <p className="ps-3 pe-3" style={{ textAlign: "justify" }}>
@@ -242,7 +246,7 @@ const Home = () => {
               <div className="cards-child">
                 <img src={earnMoney} alt="" className="pt-3 ps-3 pb-3" />
 
-                <h3 className="pt-3 ps-3 pb-3">Earn Money</h3>
+                <h3 className=" fw-400 pt-3 ps-3 pb-3 font">Earn Money</h3>
                 <p className="ps-3 pe-3" style={{ textAlign: "justify" }}>
                   Now you can earn money by reselling airtime with the Digi Cash
                   feature. Get up to 2.5% comission on every recharge and
@@ -253,7 +257,7 @@ const Home = () => {
               <div className="cards-child">
                 <img src={multiDevices} alt="" className="pt-3 ps-3 pb-3" />
 
-                <h3 className="pt-3 ps-3 pb-3">Multi Devices</h3>
+                <h3 className=" fw-400 pt-3 ps-3 pb-3 font">Multi Devices</h3>
                 <p className="ps-3 pe-3" style={{ textAlign: "justify" }}>
                   If you are multiple partners running a single business then
                   you can use DigiKhata to update, remove and add your
@@ -269,7 +273,7 @@ const Home = () => {
           <div className="container mt-3">
             <div className="row">
               <div className="col-12 col-lg-6">
-                <h2>50 Lakh+ Users Trust Digi Khata</h2>
+                <h2 className="font fw-400">50 Lakh+ Users Trust Digi Khata</h2>
                 <p>
                   DigiKhata caters to the digital needs of every business
                   including;
@@ -289,46 +293,59 @@ const Home = () => {
                   <li className="user">Real Estate Office</li>
                 </ul>
               </div>
-              <div className="col-12 col-lg-6 my-auto">
-                <div
-                  className="col-md-6 my-auto"
-                  style={{ backgroundSize: "cover" }}
-                >
-                  <div
-                    className="d-flex  bg-black my-auto"
-                    style={{
-                      justifyContent: "center",
-                      alignItems: "center",
-                      // height: "100%",
-                      // width:'100%',
-                      background: "none",
-                    }}
-                  >
-                    <Button variant="primary" onClick={handleShow}>
-                      Launch demo modal
-                    </Button>
-                  </div>
+              <div className="col-12 col-md-6 my-auto">
+      <div
+        className="d-flex  my-auto position-relative"
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100%", // Ensure the container takes full height
+        }}
+      >
+        {/* Image */}
+        <img
+          src={videoThum}
+          alt=""
+          style={{ width: "100%", height: "100%"}}
+        />
 
-                  <Modal show={show} onHide={handleClose} animation={false}>
-                    <Modal.Body
-                      style={{ display: "flex", flexDirection: "row" }}
-                    >
-                      <iframe
-                        width="500"
-                        height="315"
-                        src="https://www.youtube.com/embed/Y-0I4PKNH9E"
-                        title="YouTube video player"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-                    </Modal.Body>
-                  </Modal>
-                </div>
-              </div>
+        {/* Play button icon */}
+        <Button
+          variant="transparent"
+          style={{
+            position: 'absolute',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100%',
+            width: '100%',
+            background: 'none',
+            border: 'none',
+          }}
+          
+        >
+          <FaYoutube size={50} color="#fff" onClick={handleShow} />
+        </Button>
+      </div>
+
+      {/* Modal */}
+      <Modal show={show} onHide={handleClose} animation={false}>
+        <Modal.Body style={{ display: "flex", flexDirection: "row" }}>
+          <iframe
+            width="500"
+            height="500"
+            src="https://www.youtube.com/embed/Y-0I4PKNH9E"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </Modal.Body>
+      </Modal>
+    </div>
             </div>
           </div>
         </section>
-
+{/* =========================== carousel home ================================== */}
         <section className="mt-3">
           <div style={{ backgroundColor: "#e74425" }} className="">
             <div className="container text-white ">
@@ -420,12 +437,13 @@ const Home = () => {
             </div>
           </div>
         </section>
+        {/* ============================ Frequently Asked Qusetion ========================= */}
         <section className="py-5" style={{ backgroundColor: "#f8f8f8" }}>
           <div className="pt-5">
             <div className="container">
               <div className="row">
-                <div className="col-md-4 col-12">
-                  <h2>Frequently Asked Question</h2>
+                <div className="col-md-4 col-12  font">
+                  <h2 className="fw-400">Frequently Asked Question</h2>
                   <p>
                     Is this guide help for you? If you still have any queries
                     about the DigiKhata app then contact us now!
@@ -448,7 +466,7 @@ const Home = () => {
                 </div>
                 <div className="col-md-8 col-12">
                   <div className="">
-                    <Accordion defaultActiveKey="0">
+                    <Accordion>
                       <Accordion.Item eventKey="0">
                         <Accordion.Header>
                           How To Add Your Business In DigiKhata?

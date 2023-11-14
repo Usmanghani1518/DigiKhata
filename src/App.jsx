@@ -7,6 +7,7 @@ import Blog from './components/blogs/Blog.jsx';
 import Feature from './components/features/Feature.jsx';
 import Contact from './components/Contact-Us/Contact.jsx';
 import Career from './components/Career/Career.jsx';
+import SlickCarousel from './components/slick.jsx';
 import './App.css'
 import {  
   BrowserRouter as Router,  
@@ -213,12 +214,6 @@ function App() {
 
   ]
 
-
-
-
-
-
-
   return (
     <>
       {/* <Mouse/> */}
@@ -231,13 +226,8 @@ function App() {
         <Route path='/career' element={<Career/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/' element={<Home/>}/>
-
-
-       {/* <Navbar/>
-        <Home/> */}
         
        </Routes>
-       
        <Footer/>
       </Router>
      

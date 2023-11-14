@@ -6,6 +6,8 @@ import Navbars from '../navbar';
 import './Blog.css'
 const Blog = () => {
   return (
+    <>
+   
     <div
         className={`background-blog img-fluid`}
         style={{ width: "100%", height: "100%", marginTop: "-60px" }}
@@ -53,6 +55,31 @@ const Blog = () => {
           </div>
         </section>
       </div>
+
+
+<section id='blog' className='blog'>
+<div className='container'>
+<h2 className='text-center py-5'>Our <span className='orange'>Blogs</span></h2>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+      </>
   )
 }
 

@@ -9,6 +9,7 @@ import MSoft from "../imagies/microsoft.png";
 import insta from "../imagies/insta.png";
 import FooterLogo from "../imagies/footer-logo.png";
 import { Link } from "react-router-dom";
+import '../styles/Footer.css'
 const Footer = () => {
   return (
     <>
@@ -34,8 +35,8 @@ const Footer = () => {
 
           <div className="row mt-5">
             <div className="col-md-6 col-12">
-              <p className="pointer">contact@digikhata.pk</p>
-              <p className="pointer">+92 3099656639</p>
+              <p className="pointer h-bg ">contact@digikhata.pk</p>
+              <p className="pointer h-bg">+92 3099656639</p>
               <p>
                 Digi Technologies PTE LTD. <br /> 160 Robinson Road #14-04,
                 Singapore
@@ -53,40 +54,40 @@ const Footer = () => {
               <div className="row">
                 <div className="col-md-4 col-12">
                   <p>
-                    {" "}
-                    <a
-                      style={{ textDecoration: "none", color: "white" }}
-                      href=""
+                    
+                    <Link
+                      style={{ textDecoration: "none", color: "white",borderRadius:'8px' }}
+                      className="h-bg px-2 py-1"
                     >
                       Privacy Policy
-                    </a>{" "}
+                    </Link>
                   </p>
                   <p>
                     {" "}
-                    <a
-                      style={{ textDecoration: "none", color: "white" }}
-                      href=""
+                    <Link
+                      style={{ textDecoration: "none", color: "white" ,borderRadius:'8px' }}
+                      className="h-bg px-2 py-1"
                     >
                       Terms of Use
-                    </a>{" "}
+                    </Link>{" "}
                   </p>
                   <p>
                     {" "}
-                    <a
-                      style={{ textDecoration: "none", color: "white" }}
-                      href=""
+                    <Link
+                      style={{ textDecoration: "none", color: "white",borderRadius:'8px' }}
+                      className="h-bg px-2 py-1"
                     >
                       Contact Us
-                    </a>{" "}
+                    </Link>{" "}
                   </p>
                   <p>
                     {" "}
-                    <a
-                      style={{ textDecoration: "none", color: "white" }}
-                      href=""
+                    <Link
+                      style={{ textDecoration: "none", color: "white",borderRadius:'8px' }}
+                      className="h-bg px-2 py-1"
                     >
                       Career
-                    </a>{" "}
+                    </Link>{" "}
                   </p>
                 </div>
                 <div className="col-md-8 col-12">

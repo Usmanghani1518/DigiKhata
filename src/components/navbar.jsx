@@ -34,10 +34,11 @@ function Navbars() {
   }
   return (
     <>
+
       <Navbar
         style={{ top: "0", backgroundColor: bgColor }}
         expand="lg"
-        className=" fixed-top"
+        className=" fixed-top font"
       >
         <Container>
           <Navbar.Brand
@@ -129,7 +130,7 @@ function Navbars() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <ScrollUpButton smooth  top={500} WrapperComponent={ScrollTop}    />
+      {/* <ScrollUpButton smooth  top={500} WrapperComponent={ScrollTop}    /> */}
     </>
   );
 }

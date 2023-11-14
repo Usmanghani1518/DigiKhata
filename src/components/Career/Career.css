@@ -1,3 +1,18 @@
 .py-career{
     padding: 120px 0px 100px 0px;
 }
+ .carousel-indicators {
+    margin-bottom: 1rem !important;
+  }
+  
+   .carousel-indicators button {
+    width: 13px !important;
+    height: 13px !important;
+    border-radius: 50% !important;
+    border: 2px solid #e74425 !important;
+    background-color: transparent !important;
+  }
+  
+   .carousel-indicators .active {
+    background-color: #e74425 !important;
+  }
