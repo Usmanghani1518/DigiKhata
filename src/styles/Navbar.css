@@ -29,7 +29,8 @@
     color: white;
   }
   
-  .nav-link:hover::after {
+  .nav-link:hover::after,
+  .nav-link .active {
     content: '';
     position: absolute;
     width: 80%;
@@ -37,14 +38,7 @@
     background-color: white;
     bottom: 8px;
     left: 10%;
-   
   }
-  /* .header-position-fixed{
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    background-color: green;
-  } */
 .google:hover{
   cursor: pointer;
 }

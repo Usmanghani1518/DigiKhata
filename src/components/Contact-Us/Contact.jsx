@@ -1,6 +1,11 @@
 import React from 'react'
 import gPlay from "../../imagies/google-play-head.png";
 import appStore from "../../imagies/app-store-head.png";
+import mail from "../../imagies/contact/mail.png";
+import whattsapp from "../../imagies/contact/whattsapp.png";
+import call from "../../imagies/contact/call.png";
+
+
 // import featureHead from "../../imagies/features/features-head-boy.png";
  import {GrMail}  from "react-icons/gr";
  import {BiSolidPhoneCall}  from "react-icons/bi";
@@ -67,18 +72,18 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="col-md-3 col-12 text-center box mb-3  px-0 mx-3"> {/* Added mx-2 for horizontal margin */}
+          <div className="col-md-3 col-12 bg-white text-center box mb-3  px-0 mx-3"> {/* Added mx-2 for horizontal margin */}
             <div className="py-5">
-              <GrMail className="contactIcon mb-3 mt-3" />
+              <img src={mail} className="contactIcon mb-3 mt-3 img-fluid" />
               <h4 className="my-3">Send Us Email</h4>
-              <Link to="mailto:contact@digikhata.pk" className="text-orange">
+              <Link to="mailto:mrusmanghani8@gmail.com" className="text-orange">
                 contact@digikhata.pk
               </Link>
             </div>
           </div>
-          <div className="col-md-3 col-12 text-center box  mb-3 mx-2"> {/* Added mx-2 for horizontal margin */}
+          <div className="col-md-3 col-12 bg-white text-center box  mb-3 mx-2"> {/* Added mx-2 for horizontal margin */}
             <div className="py-5">
-              <BiSolidPhoneCall className="contactIcon mb-3 mt-3" />
+            <img src={call} className="contactIcon mb-3 mt-3 img-fluid" />
               <h4 className="my-3">Give Us A Call</h4>
               <Link to="tel:+923438788453" className="text-orange">
                 +92 313 7979 999
@@ -86,9 +91,9 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="col-md-3 col-12 text-center  box mb-3 mx-3"> 
+          <div className="col-md-3 col-12 bg-white text-center  box mb-3 mx-3"> 
             <div className="py-5">
-              <IoLogoWhatsapp className="contactIcon mb-3 mt-3" />
+            <img src={whattsapp} className="contactIcon mb-3 mt-3 img-fluid" />
               <h4 className="my-3">WhatsApp</h4>
               <Link to="https://wa.me/923438788453" className="text-orange">
                 +92 313 7979 999

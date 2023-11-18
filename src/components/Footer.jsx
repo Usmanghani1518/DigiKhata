@@ -13,7 +13,7 @@ import '../styles/Footer.css'
 const Footer = () => {
   return (
     <>
-      <section className="footer mt-3 bg-black">
+      <section className="footer bg-black">
         <div className="container text-white">
           <div className="row container pt-5">
             <div className="col-md-3 col-12" style={{ fontSize: "32px" }}>
@@ -33,10 +33,11 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="row mt-5">
-            <div className="col-md-6 col-12">
-              <p className="pointer h-bg ">contact@digikhata.pk</p>
-              <p className="pointer h-bg">+92 3099656639</p>
+          <div className="row pt-3">
+            <div className="col-md-6 col-12   mt-md-4">
+              <p style={{display:'inline-block',borderRadius:'8px'}} className="pointer h-bg px-2 py-1">contact@digikhata.pk</p>
+              <div>
+              <p  style={{display:'inline-block',borderRadius:'8px'}} className="pointer h-bg px-2 py-1">+92 3099656639</p> </div>
               <p>
                 Digi Technologies PTE LTD. <br /> 160 Robinson Road #14-04,
                 Singapore
@@ -50,9 +51,9 @@ const Footer = () => {
                 535 B Peoples Colony Faisalabad, Pakistan
               </p>
             </div>
-            <div className="col-md-6 col-12">
+            <div className="col-md-6 col-12 ">
               <div className="row">
-                <div className="col-md-4 col-12">
+                <div className="col-md-4 col-12 mt-4 ">
                   <p>
                     
                     <Link
@@ -91,35 +92,35 @@ const Footer = () => {
                   </p>
                 </div>
                 <div className="col-md-8 col-12">
-                  <div className="d-flex justify-content-space-between">
+                  <div className="d-flex ">
                     <div>
-                      <img src={twitter} className="img-fluid me-3" alt="" />
+                      <img src={twitter} className="img-fluid me-4 pointer" alt="" />
                     </div>
 
                     <div>
-                      <img src={youtube} className="img-fluid me-3" alt="" />
+                      <img src={youtube} className="img-fluid me-4 pointer" alt="" />
                     </div>
 
                     <div>
-                      <img src={insta} className="img-fluid me-3" alt="" />
+                      <img src={insta} className="img-fluid me-4 pointer" alt="" />
                     </div>
 
                     <div>
-                      <img src={linkdin} className="img-fluid me-3" alt="" />
+                      <img src={linkdin} className="img-fluid me-4 pointer" alt="" />
                     </div>
                     <div>
-                      <img src={facebook} className="img-fluid me-3" alt="" />
+                      <img src={facebook} className="img-fluid me-4 pointer" alt="" />
                     </div>
                   </div>
                   <div className="mt-3">
-                    <img src={gPlay} alt="" />
+                    <img src={gPlay} className="img-fluid pointer" alt="" />
                   </div>
                   <div className="mt-3">
-                    <img src={appStore} alt="" />
+                    <img src={appStore} className="img-fluid pointer" alt="" />
                   </div>
                   <div className="mt-3">
                     {" "}
-                    <img src={MSoft} alt="" />
+                    <img src={MSoft} className="img-fluid pointer" alt="" />
                   </div>
                 </div>
               </div>

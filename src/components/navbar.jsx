@@ -10,7 +10,9 @@ import ScrollUpButton from 'react-scroll-to-top';
 import "../styles/Navbar.css";
 function Navbars() {
   const [bgColor, setbgColor] = useState("transparent");
+ 
 
+ 
 
   const Change = () => {
     if (window.scrollY >= 40) {
@@ -67,7 +69,7 @@ function Navbars() {
               }}
               navbarScroll
             >
-              <Nav.Link id="About" className="text-white me-3  ">
+              <Nav.Link id="About" className="text-white me-3 p ">
                 <Link
                   to="/about"
                   style={{ textDecoration: "none", color: "white" }}
@@ -77,7 +79,7 @@ function Navbars() {
                   About Us{" "}
                 </Link>
               </Nav.Link>
-              <Nav.Link className="text-white me-3">
+              <Nav.Link className="text-white me-3 p">
                 <Link
                   to="/feature"
                   style={{ textDecoration: "none", color: "white" }}
@@ -87,7 +89,7 @@ function Navbars() {
                   Features{" "}
                 </Link>
               </Nav.Link>
-              <Nav.Link className="text-white me-3">
+              <Nav.Link className="text-white me-3 p">
                 <Link
                   to="/blog"
                   style={{ textDecoration: "none", color: "white" }}
@@ -98,7 +100,7 @@ function Navbars() {
                 </Link>
               </Nav.Link>
 
-              <Nav.Link className="text-white me-3">
+              <Nav.Link className="text-white me-3 p">
                 <Link
                   to="/career"
                   style={{ textDecoration: "none", color: "white" }}
@@ -107,7 +109,7 @@ function Navbars() {
                   Career
                 </Link>
               </Nav.Link>
-              <Nav.Link className="text-white me-3">
+              <Nav.Link className="text-white me-3 p">
                 <Link
                   to="/contact"
                   style={{ textDecoration: "none", color: "white" }}
@@ -123,6 +125,7 @@ function Navbars() {
                   width: "130px",
                   fontWeight: "400",
                 }}
+                className="p"
               >
                 Login
               </Button>

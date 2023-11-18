@@ -71,7 +71,7 @@ const Career = () => {
   <img src={howToApply} className='img-fluid' alt="" />
 </div>
 <div className="col-md-6 col-12 m-auto px-4 px-md-4">
-  <h2 className='fw-bold'  >How to <span className='orange'>Apply?</span> </h2>
+  <h2 className='fw-bold font'  >How to <span className='orange'>Apply?</span> </h2>
   <p>If you’re looking for a great career opportunity to excel in your professional journey then DigiKhata could help you meet your goals. Browse this page, our Linked In Page or Facebook page to find a job opportunity. Apply for the job position, read the job requirements carefully and then provide your details as per the requirements</p>
   <p>Kindly, it is requested you stay honest while applying for the job. Once, you’ll apply for the job then HR will receive your job application digitally. If we’ll find your portfolio suitable for our requirements then we’ll shortlist you & call you for an interview after a few business days.</p>
   </div>
@@ -83,7 +83,7 @@ const Career = () => {
     <div className="container">
 <div className="  row py-5">
 <div className="col-md-6 col-12 m-auto px-4 px-md-4">
-  <h2 className='fw-bold'  >Why are We <span className='orange'>Popular?</span> </h2>
+  <h2 className='fw-bold font'  >Why are We <span className='orange'>Popular?</span> </h2>
   <p>The primary reason for our popularity is that DigiKhata Pvt Ltd. doesn’t consider you an employee but a valuable family member once we hire you. Our mission is to expand our family and provide remarkable professional opportunities to a larger community. We embrace “ideas” and the great minds that generate them.</p>
   <p>We want the DigiKhata family to keep on generating ideas so we contribute to the development & innovation of our country. “Respect” is the primary trait that reflects the core of our values. We strictly condemn disrespectful behavior and discrimination wherever it happens around the world.</p>
   </div>
@@ -96,10 +96,10 @@ const Career = () => {
 {/* ======================= Explore our business =================================== */}
   <section className='pt-5'>
     {/* <div className="pt-5"> */}
-<h2 className="fw-bold text-center pb-md-5 mb-2">Explore Our <span className='orange'>Career</span>  Areas</h2>
+<h2 className="fw-bold text-center pb-md-5 mb-2 font">Explore Our <span className='orange'>Career</span>  Areas</h2>
 {/* </div> */}
-<h2 className="fw-bold text-center">Valuable Feedback From</h2>
-<h2 className="fw-bold text-center orange">Our Workforce</h2>
+<h2 className="fw-bold text-center font">Valuable Feedback From</h2>
+<h2 className="fw-bold text-center orange font">Our Workforce</h2>
 
   </section>
 {/* ======================== carousel of career ====================================== */}

@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import "./Home.css";
-import { FaYoutube } from 'react-icons/fa';
+import { FaYoutube,FaArrowRight } from "react-icons/fa";
 import Book from "../../imagies/khata.png";
 import dokaan from "../../imagies/dokaan.png";
 import Billbook from "../../imagies/billbook.png";
@@ -33,7 +33,8 @@ import appStore from "../../imagies/app-store-head.png";
 import microsoft from "../../imagies/microsoft.png";
 import HomeheadImg from "../../imagies/home-head-img.png";
 import videoThum from "../../imagies/video-thum.png";
-
+import { useBlogContext } from "../blogs/BlogContext.jsx";
+import { Link } from "react-router-dom";
 
 import Navbars from "../navbar";
 const Home = () => {
@@ -41,6 +42,8 @@ const Home = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  let stopId =true;
+  const BlogInfo = useBlogContext();
   return (
     <>
       <div
@@ -105,12 +108,13 @@ const Home = () => {
       </div>
 
       <div className=" home">
+        {/* ===================== Grow your Business ========================= */}
         <section className="mt-5">
           <div className="container">
-            <h1 className="font"
+            <h1
+              className="font fw-400"
               style={{
                 fontSize: "2.25rem",
-                fontWeight: "500",
                 textAlign: "center",
               }}
             >
@@ -128,15 +132,15 @@ const Home = () => {
             </p>
           </div>
         </section>
-
+        {/* ================================  one stop small business ====================== */}
         <section className="mt-5 pt-3">
           <div className="container">
             <div className="row">
               <div
                 style={{ textAlign: "justify" }}
-                className="col-12 col-lg-6 pt-lg-3"
+                className="col-12 col-lg-6  mt-5"
               >
-                <h2   className="fw-400 pe-5 me-lg-5 font ">
+                <h2 className="fw-400 pe-5 me-lg-5 font ">
                   One-Stop Solution For Small Businesses
                 </h2>
                 <p className="pe-5 me-lg-5" style={{ textAlign: "justify" }}>
@@ -152,44 +156,44 @@ const Home = () => {
                     <div style={{ width: "15%" }}>
                       <img src={Book} alt="" style={{ width: "30px" }} />
                     </div>
-                    <p>Account Ledgers</p>
+                    <p className="pt-2 h3 fw-400">Account Ledgers</p>
                   </div>
                   <div className="d-flex mb-3" style={{}}>
                     <div style={{ width: "15%" }}>
                       <img src={Cashbook} alt="" style={{ width: "30px" }} />
                     </div>
-                    <p>Cash Book</p>
+                    <p className="h3 fw-400">Cash Book</p>
                   </div>
                   <div className="d-flex mb-3" style={{}}>
                     <div style={{ width: "15%" }}>
                       <img src={Billbook} alt="" style={{ width: "30px" }} />
                     </div>
-                    <p>Bill Book</p>
+                    <p className="h3 fw-400">Bill Book</p>
                   </div>
                   <div className="d-flex mb-3" style={{}}>
                     <div style={{ width: "15%" }}>
                       <img src={Stockbook} alt="" style={{ width: "30px" }} />
                     </div>
-                    <p>Stock Book</p>
+                    <p className="h3 fw-400">Stock Book</p>
                   </div>
                   <div className="d-flex  mb-3" style={{}}>
                     <div style={{ width: "15%" }}>
                       <img src={staffBook} alt="" style={{ width: "30px" }} />
                     </div>
-                    <p>Staff Book</p>
+                    <p className="h3 fw-400">Staff Book</p>
                   </div>
                   <div className="d-flex mb-5" style={{}}>
                     <div style={{ width: "15%" }}>
                       <img src={dokaan} alt="" style={{ width: "30px" }} />
                     </div>
-                    <p>Digi Dokaan</p>
+                    <p className="h3 fw-400">Digi Dokaan</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
+        {/* ======================= cards home ==================================== */}
         <section className="cards mt-4">
           <div className="container">
             <div className="d-grid">
@@ -199,7 +203,9 @@ const Home = () => {
                   alt=""
                   className="pt-3 ps-3 pb-3"
                 />
-                <h3 className="fw-400 pt-3 ps-3 pb-3 font">Unlimited Customers</h3>
+                <h3 className="fw-400 pt-3 ps-3 pb-3 font">
+                  Unlimited Customers
+                </h3>
                 <p className="ps-3 pe-3" style={{ textAlign: "justify" }}>
                   Once you log in to the DigiKhata app. Then tap on the “ADD
                   CUSTOMER” button. Type your customer name and add their
@@ -210,7 +216,9 @@ const Home = () => {
               <div className="cards-child">
                 <img src={cashIn} alt="" className="pt-3 ps-3 pb-3" />
 
-                <h3 className=" fw-400 pt-3 ps-3 pb-3 font">Cash In / Cash Out</h3>
+                <h3 className=" fw-400 pt-3 ps-3 pb-3 font">
+                  Cash In / Cash Out
+                </h3>
                 <p className="ps-3 pe-3" style={{ textAlign: "justify" }}>
                   Tap on “Cash Book” on the Home Screen. Add your Cash In & Cash
                   Out quickly. With the built-in calculator, you can easily
@@ -221,7 +229,9 @@ const Home = () => {
               <div className="cards-child">
                 <img src={businessCard} alt="" className="pt-3 ps-3 pb-3" />
 
-                <h3 className=" fw-400 pt-3 ps-3 pb-3 font">Free Business Cards</h3>
+                <h3 className=" fw-400 pt-3 ps-3 pb-3 font">
+                  Free Business Cards
+                </h3>
                 <p className="ps-3 pe-3" style={{ textAlign: "justify" }}>
                   Represent your business the right way. Are you finding it
                   expensive to have a creative business card? With DigiKhata you
@@ -268,84 +278,83 @@ const Home = () => {
             </div>
           </div>
         </section>
-
+        {/* =========================== 50 lack user ========================= */}
         <section className="mt-5 mb-5 pt-4">
           <div className="container mt-3">
             <div className="row">
               <div className="col-12 col-lg-6">
                 <h2 className="font fw-400">50 Lakh+ Users Trust Digi Khata</h2>
-                <p>
+                <p className="pe-lg-5 me-lg-5">
                   DigiKhata caters to the digital needs of every business
                   including;
                 </p>
                 <ul>
-                  <li className="user">Kiryana (utility store)</li>
-                  <li className="user">Mobile Shop</li>
-                  <li className="user">Supermart</li>
-                  <li className="user">Restaurant</li>
-                  <li className="user">Bakery</li>
-                  <li className="user">Pharmacy</li>
-                  <li className="user">Boutique</li>
-                  <li className="user">Departmental Store</li>
-                  <li className="user">Garments Shop</li>
-                  <li className="user">Milk Shop</li>
-                  <li className="user">Jewelry Shop</li>
-                  <li className="user">Real Estate Office</li>
+                  <li className="user p"> Kiryana (utility store)</li>
+                  <li className="user p">Mobile Shop</li>
+                  <li className="user p">Supermart</li>
+                  <li className="user p">Restaurant</li>
+                  <li className="user p">Bakery</li>
+                  <li className="user p">Pharmacy</li>
+                  <li className="user p">Boutique</li>
+                  <li className="user p">Departmental Store</li>
+                  <li className="user p">Garments Shop</li>
+                  <li className="user p">Milk Shop</li>
+                  <li className="user p">Jewelry Shop</li>
+                  <li className="user p">Real Estate Office</li>
                 </ul>
               </div>
               <div className="col-12 col-md-6 my-auto">
-      <div
-        className="d-flex  my-auto position-relative"
-        style={{
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100%", // Ensure the container takes full height
-        }}
-      >
-        {/* Image */}
-        <img
-          src={videoThum}
-          alt=""
-          style={{ width: "100%", height: "100%"}}
-        />
+                <div
+                  className="d-flex  my-auto position-relative"
+                  style={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "100%", // Ensure the container takes full height
+                  }}
+                >
+                  {/* Image */}
+                  <img
+                    src={videoThum}
+                    alt=""
+                    style={{ width: "100%", height: "100%" }}
+                  />
 
-        {/* Play button icon */}
-        <Button
-          variant="transparent"
-          style={{
-            position: 'absolute',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100%',
-            width: '100%',
-            background: 'none',
-            border: 'none',
-          }}
-          
-        >
-          <FaYoutube size={50} color="#fff" onClick={handleShow} />
-        </Button>
-      </div>
+                  {/* Play button icon */}
+                  <Button
+                    variant="transparent"
+                    style={{
+                      position: "absolute",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      height: "100%",
+                      width: "100%",
+                      background: "none",
+                      border: "none",
+                    }}
+                  >
+                    <FaYoutube size={50} color="#fff" onClick={handleShow} />
+                  </Button>
+                </div>
 
-      {/* Modal */}
-      <Modal show={show} onHide={handleClose} animation={false}>
-        <Modal.Body style={{ display: "flex", flexDirection: "row" }}>
-          <iframe
-            width="500"
-            height="500"
-            src="https://www.youtube.com/embed/Y-0I4PKNH9E"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </Modal.Body>
-      </Modal>
-    </div>
+                {/* Modal */}
+                <Modal show={show} onHide={handleClose} animation={false}>
+                  <Modal.Body style={{ display: "flex", flexDirection: "row" }}>
+                    <iframe
+                      width="500"
+                      height="500"
+                      src="https://www.youtube.com/embed/Y-0I4PKNH9E"
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </Modal.Body>
+                </Modal>
+              </div>
             </div>
           </div>
         </section>
-{/* =========================== carousel home ================================== */}
+        {/* =========================== carousel home ================================== */}
         <section className="mt-3">
           <div style={{ backgroundColor: "#e74425" }} className="">
             <div className="container text-white ">
@@ -370,7 +379,11 @@ const Home = () => {
                           </p>
                         </div>
                         <div className="col-md-2 col-12">
-                          <img src={invertedDn} className="img-fluid mt-140" alt="" />
+                          <img
+                            src={invertedDn}
+                            className="img-fluid mt-140"
+                            alt=""
+                          />
                         </div>
                       </div>
                     </div>
@@ -398,7 +411,11 @@ const Home = () => {
                           </p>
                         </div>
                         <div className="col-md-2 col-12">
-                          <img src={invertedDn} className="img-fluid mt-140" alt="" />
+                          <img
+                            src={invertedDn}
+                            className="img-fluid mt-140"
+                            alt=""
+                          />
                         </div>
                       </div>
                     </div>
@@ -426,7 +443,11 @@ const Home = () => {
                           </p>
                         </div>
                         <div className="col-md-2 col-12">
-                          <img src={invertedDn} className="img-fluid mt-140" alt="" />
+                          <img
+                            src={invertedDn}
+                            className="img-fluid mt-140"
+                            alt=""
+                          />
                         </div>
                       </div>
                     </div>
@@ -507,6 +528,37 @@ const Home = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        {/* =========================== BLogs home =========================== */}
+        <section style={{backgroundColor:'#f2f2f2'}} className="py-4">
+        <div className="container">
+            <div className="row">
+              {BlogInfo.map((a) =>{
+               
+                if (!stopId) {
+                  return null;
+                }
+                if (a.id==='kuunda') {
+                  stopId=false
+                }
+              return  (
+                <div key={a.id} className="col-lg-4    col-md-6 col-12 py-3">
+                  <div className="bg-white pointer pb-3">
+                    <img src={a.img} className="img-fluid" alt="" />
+                    <h4 className="fw-bold font px-3 py-2">{a.sh}</h4>
+                    <p className="font px-3 pb-4 fw-400">{a.sp}</p>
+
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      className="orange font px-3 "
+                    >
+                      Learn More <FaArrowRight />{" "}
+                    </Link>
+                  </div>
+                </div>
+              )})}
             </div>
           </div>
         </section>

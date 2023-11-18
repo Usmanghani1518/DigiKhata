@@ -4,27 +4,25 @@ import gPlay from "../../imagies/google-play-head.png";
 import appStore from "../../imagies/app-store-head.png";
 import BusinessImg1 from "../../imagies/about/business-img1.png";
 import Pakistan from "../../imagies/about/pakistan-digi.png";
-import Story from '../../imagies/about/our-story.png'
-import MSA from '../../imagies/about/MSA.png'
-import SOSV from '../../imagies/about/SOSV.png'
-import Shorooq from '../../imagies/about/Shorooq.png'
-import Venture from '../../imagies/about/Venture.png'
+import Story from "../../imagies/about/our-story.png";
+import MSA from "../../imagies/about/MSA.png";
+import SOSV from "../../imagies/about/SOSV.png";
+import Shorooq from "../../imagies/about/Shorooq.png";
+import Venture from "../../imagies/about/Venture.png";
 
-import AdnanNusrat from '../../imagies/about/Adnan-Nusrat.png'
-import AdnanAslam from '../../imagies/about/adnan-aslam.png'
-import amnaZeeshan from '../../imagies/about/amna-zeeshan.png'
-import bilalAnjum from '../../imagies/about/bilal-anjum.png'
-import bilalHaasan from '../../imagies/about/bilal-haasan.png'
+import AdnanNusrat from "../../imagies/about/Adnan-Nusrat.png";
+import AdnanAslam from "../../imagies/about/adnan-aslam.png";
+import amnaZeeshan from "../../imagies/about/amna-zeeshan.png";
+import bilalAnjum from "../../imagies/about/bilal-anjum.png";
+import bilalHaasan from "../../imagies/about/bilal-haasan.png";
 
-
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import "../Home/Home.css";
-import './About.css'
+import "./About.css";
 const About = () => {
-
   const settings = {
     dots: true,
     infinite: true,
@@ -117,7 +115,7 @@ const About = () => {
             <div className="container">
               <div className="row d-flex justify-content-center">
                 <div className="col-lg-6 col-md-8 col-12  text-center max-width ">
-                  <h2 style={{ fontWeight: "700" }}>
+                  <h2 className="fw-bold font" style={{ fontWeight: "700" }}>
                     Serving The Digital Needs Of{" "}
                     <span className="orange">Your Business</span>{" "}
                   </h2>
@@ -143,7 +141,7 @@ const About = () => {
                   <img src={BusinessImg1} alt="" className="img-fluid" />
                 </div>
                 <div className="col-lg-6 col-12 px-md-5 px-0 my-auto">
-                  <h2>
+                  <h2 className="fw-bold font">
                     Why Do Businesses Need{" "}
                     <span className="orange">DigiKhata?</span>{" "}
                   </h2>
@@ -169,20 +167,30 @@ const About = () => {
           </div>
         </section>
       </div>
- 
- {/* =========================== Local Merchents ============================ */}
+
+      {/* =========================== Local Merchents ============================ */}
       <section>
         <div>
           <div className="container pt-md-5 pt-3  px-3 px">
             <div className="row   justify-content-center text-center ">
               <div className="col-12 col-md-8 col-lg-7  text-center">
-            <h2 className="">Join Us In Our Mission To Empower <span className="orange"> Local Merchants </span> In Pakistan</h2>
-            </div>
+                <h2 className="fw-bold font ">
+                  Join Us In Our Mission To Empower{" "}
+                  <span className="orange"> Local Merchants </span> In Pakistan
+                </h2>
+              </div>
             </div>
             <div className="row justify-content-center text-center mb-lg-5 mb-3">
               <div className="col-12 col-md-9 text-center">
                 <p className="text-center font">
-                At DigiKhata, we are driven by the purpose of simplifying the lives and business infrastructure of local merchants in Pakistan and all across the globe. We are a team of passionate young technologists looking forward to the ever-new digital Pakistan. We are backed by powerful investors & supported by highly qualified fintech specialists. Become part of the DigiKhata family and boost our venture with your valuable insights.
+                  At DigiKhata, we are driven by the purpose of simplifying the
+                  lives and business infrastructure of local merchants in
+                  Pakistan and all across the globe. We are a team of passionate
+                  young technologists looking forward to the ever-new digital
+                  Pakistan. We are backed by powerful investors & supported by
+                  highly qualified fintech specialists. Become part of the
+                  DigiKhata family and boost our venture with your valuable
+                  insights.
                 </p>
               </div>
             </div>
@@ -190,37 +198,62 @@ const About = () => {
         </div>
       </section>
 
-{/* =============================== who we are ========================= */}
+      {/* =============================== who we are ========================= */}
       <section>
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-12 px-md-5 px-4 my-auto">
-<h2>Who <span className="orange">We Are?</span> </h2>
-<p className="justify font">DigiKhata is an industry-leading fintech company introducing innovative solutions to help local businesses change the horizon of their business from less efficient to more propelling. DigiKhata is used and trusted by millions of people and businesses all across the nation.</p>
-<p className="justify font ">Also, we have introduced an online business platform i.e. “Digi Dokaan” that helps its users to create their online store in just 30 seconds. We are also intended to bring more innovative and contemporary solutions to help MSMEs keep pace with the modern trends in the marketplace.</p>
+              <h2 className="font fw-bold">
+                Who <span className="orange">We Are?</span>{" "}
+              </h2>
+              <p className="justify font">
+                DigiKhata is an industry-leading fintech company introducing
+                innovative solutions to help local businesses change the horizon
+                of their business from less efficient to more propelling.
+                DigiKhata is used and trusted by millions of people and
+                businesses all across the nation.
+              </p>
+              <p className="justify font ">
+                Also, we have introduced an online business platform i.e. “Digi
+                Dokaan” that helps its users to create their online store in
+                just 30 seconds. We are also intended to bring more innovative
+                and contemporary solutions to help MSMEs keep pace with the
+                modern trends in the marketplace.
+              </p>
             </div>
             <div className="col-lg-6 col-12">
-<img src={Pakistan} className="img-fluid" alt="" />
+              <img src={Pakistan} className="img-fluid" alt="" />
             </div>
           </div>
         </div>
       </section>
 
-{/* ================= our vlaues ================================== */}
+      {/* ================= our vlaues ================================== */}
       <section>
         <div className="container py-md-5 py-1">
-          <h2 className="text-center">Our <span className="orange">Values</span> </h2>
-       
-        <div className="row justify-content-center">
-          <div className="col-11 col-md-9 text-center">
-            <p className="text-center">
-            Our organization is structured with 4 robust values i.e. Curiosity, empathy, innovation-oriented and biased for actions. Our dedicated R&D specialists perform in-depth market analysis and continuously research for innovative solutions. DigiKhata team holds its significance due to the respect it offers to all stakeholders without any discrimination. Our solutions are future-oriented helping merchants and businesses to stay at the competitive edge. We always strive to extend our limits and contribute to the ever-growing ecosystem of finance and technology with useful solutions.
-            </p>
-          </div>
+          <h2 className="text-center fw-bold font">
+            Our <span className="orange">Values</span>{" "}
+          </h2>
+
+          <div className="row justify-content-center">
+            <div className="col-11 col-md-9 text-center">
+              <p className="text-center">
+                Our organization is structured with 4 robust values i.e.
+                Curiosity, empathy, innovation-oriented and biased for actions.
+                Our dedicated R&D specialists perform in-depth market analysis
+                and continuously research for innovative solutions. DigiKhata
+                team holds its significance due to the respect it offers to all
+                stakeholders without any discrimination. Our solutions are
+                future-oriented helping merchants and businesses to stay at the
+                competitive edge. We always strive to extend our limits and
+                contribute to the ever-growing ecosystem of finance and
+                technology with useful solutions.
+              </p>
+            </div>
           </div>
         </div>
       </section>
- {/*  ================ our story sectionn ================================= */}
+      {/*  ================ our story sectionn ================================= */}
       <section>
         <div className="container">
           <div className="row pb-5">
@@ -228,81 +261,99 @@ const About = () => {
               <img src={Story} className="img-fluid" alt="" />
             </div>
             <div className="col-lg-6  pb-4 pb-md-0 px-md-5 m-auto">
-              <h2>Our <span className="orange">Story</span> </h2>
+              <h2 className="fw-bold font">
+                Our <span className="orange">Story</span>{" "}
+              </h2>
               <p className="justify">
-              Founded in 2020 by Adnan Aslam and Bilal Anjum, DigiKhata is introduced to digitize significant bookkeeping and accounting procedures for local businesses in Pakistan. DigiKhata was started as a solopreneurship and then multiple fundraisers contributed to the development of this all-rounder joint venture.
+                Founded in 2020 by Adnan Aslam and Bilal Anjum, DigiKhata is
+                introduced to digitize significant bookkeeping and accounting
+                procedures for local businesses in Pakistan. DigiKhata was
+                started as a solopreneurship and then multiple fundraisers
+                contributed to the development of this all-rounder joint
+                venture.
               </p>
               <p className="justify">
-              Now DigiKhata has a competitive edge in the marketplace due to its future-ready solutions. Local businesses are finding more opportunities to increase their revenue stream and improve their data security with DigiKhata.
+                Now DigiKhata has a competitive edge in the marketplace due to
+                its future-ready solutions. Local businesses are finding more
+                opportunities to increase their revenue stream and improve their
+                data security with DigiKhata.
               </p>
-
-</div>
+            </div>
           </div>
         </div>
       </section>
-  {/*          ============== our Investor section ======================= */}
+      {/*          ============== our Investor section ======================= */}
 
       <section>
         <div className="bg-orange our-invester">
           <div className="py-5 text-white container">
-          <h2 className="text-center pb-5">Our Investors</h2>
-          <div className="d-grid">
-            <div className="">
-              <img src={SOSV} className="img-fluid" alt="" />
-            </div>
-            <div className="">
-            <img src={Venture} className="img-fluid" alt="" />
-
-            </div>
-            <div className="">
-            <img src={Shorooq} className="img-fluid" alt="" />
-
-            </div>
-            <div className="">
-            <img src={MSA} className="img-fluid" alt="" />
-
+            <h2 className="text-center pb-5 fw-bold font">Our Investors</h2>
+            <div className="d-grid">
+              <div className="">
+                <img src={SOSV} className="img-fluid" alt="" />
+              </div>
+              <div className="">
+                <img src={Venture} className="img-fluid" alt="" />
+              </div>
+              <div className="">
+                <img src={Shorooq} className="img-fluid" alt="" />
+              </div>
+              <div className="">
+                <img src={MSA} className="img-fluid" alt="" />
+              </div>
             </div>
           </div>
         </div>
-        </div>
       </section>
 
-{        /* ====== slick-carousel section =========== */             }
+      {/* ====== slick-carousel section =========== */}
 
       <section className="bg-grey">
         <div className="container py-5  ">
           <div className="mb-md-5 mb-3">
-<h2  className="text-center ">Meet Our <span className="orange">Incredible Team</span></h2>
+            <h2 className="text-center  fw-bold font">
+              Meet Our <span className="orange">Incredible Team</span>
+            </h2>
           </div>
-          <div className="slick-carousel container" >
-          <div className="" >
-    <Slider {...settings} >
-      <div>
-        
-        <img src={AdnanAslam} className="img-fluid" alt="Slide 1" />
-        <p className="text-center pt-3">Adnan Aslam <br /> Founder & CEO</p>
-        
-
-      </div>
-      <div>
-        <img src={AdnanNusrat} className="img-fluid" alt="Slide 2" />
-        <p className="text-center pt-3">Adnan Nusrat <br /> CDPO</p>
-      </div>
-      <div>
-        <img src={amnaZeeshan} className="img-fluid" alt="Slide 3" />
-        <p className="text-center pt-3">Amna Zeshan <br /> Product Manager</p>
-      </div>
-      <div>
-        <img src={bilalAnjum} className="img-fluid" alt="Slide 3" />
-        <p className="text-center pt-3">Bilal Anjum <br /> Co-Founder</p>
-      </div>
-      <div>
-        <img src={bilalHaasan} className="img-fluid text-center" alt="Slide 3" />
-        <p className="text-center pt-3">Bilal Hassan Malik <br /> CTO</p>
-      </div>
-     
-    </Slider>
-    </div>
+          <div className="slick-carousel container">
+            <div className="">
+              <Slider {...settings}>
+                <div>
+                  <img src={AdnanAslam} className="img-fluid" alt="Slide 1" />
+                  <p className="text-center pt-3">
+                    Adnan Aslam <br /> Founder & CEO
+                  </p>
+                </div>
+                <div>
+                  <img src={AdnanNusrat} className="img-fluid" alt="Slide 2" />
+                  <p className="text-center pt-3">
+                    Adnan Nusrat <br /> CDPO
+                  </p>
+                </div>
+                <div>
+                  <img src={amnaZeeshan} className="img-fluid" alt="Slide 3" />
+                  <p className="text-center pt-3">
+                    Amna Zeshan <br /> Product Manager
+                  </p>
+                </div>
+                <div>
+                  <img src={bilalAnjum} className="img-fluid" alt="Slide 3" />
+                  <p className="text-center pt-3">
+                    Bilal Anjum <br /> Co-Founder
+                  </p>
+                </div>
+                <div>
+                  <img
+                    src={bilalHaasan}
+                    className="img-fluid text-center"
+                    alt="Slide 3"
+                  />
+                  <p className="text-center pt-3">
+                    Bilal Hassan Malik <br /> CTO
+                  </p>
+                </div>
+              </Slider>
+            </div>
           </div>
         </div>
       </section>
