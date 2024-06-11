@@ -49,7 +49,7 @@ const Home = () => {
         <div className="row ">
           <div className=" col-md-6 col-12 mt-md-5 pt-lg-5 pb-lg-5">
           <h1 style={{fontWeight:'700'}} className="text-white pt-lg-5 mt-lg-5" >
-                    Barhao Karobaar Se Nata! Download Digi Khata
+                    Barhao Karobaar Se Nata! Download Digi Khata updated
                   </h1>
 
                   <p className="text-white pt-3">
